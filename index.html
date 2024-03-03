@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/Logo.png" alt="Logo Alura">
+    </header>
+    <div class="content">        
+        <div id="form" class="form">
+            <textarea placeholder="Ingrese el texto aqui" class="textoEncriptador" name="textoEncriptador" id="textoEncriptador" cols="30" rows="10"></textarea>
+            <div class="disclaimer">
+                <img src="assets/Vector.png" alt="" >
+                <p>Solo letras minúsculas y sin acentos</p>                
+            </div>
+            <div class="btns">
+                <button class="btn-blue" onclick="encriptar()">Encriptar</button>
+                <button class="btn-white" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div id="resultado" class="resultado">
+            <div id="noMessage">
+                <img src="assets/Muñeco.png" alt="Muñeco">
+                <div>
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>            
+            <div id="resultado-ok" class="resultado-valor">
+                <textarea disabled placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas." name="resultadoEncriptado" id="resultadoEncriptado" cols="30" rows="5"></textarea>
+                <button class="btn-white" onclick="copiar()">Copiar</button>
+            </div>            
+        </div>
+    </div>
+    <footer>
+        Desarrollado por Marcos Fernández - Desafío Alura 2024
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
